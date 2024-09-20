@@ -43,7 +43,6 @@ public class Meteor : MonoBehaviour, IPoolableGameObject
             meteorPoolManager.ReturnObject(gameObject);
         } else
         {
-            // Rotate the bullet vector 120 degrees
             Vector2 meteor1Vector = Quaternion.Euler(0, 0, 45) * new Vector2(-bulletVector.y, bulletVector.x);
             Vector2 meteor2Vector = Quaternion.Euler(0, 0, -45) * new Vector2(-bulletVector.y, bulletVector.x);
 
